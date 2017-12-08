@@ -1,0 +1,4 @@
+SELECT DISTINCT Artist.name, Genre.name From Track
+	JOIN Album JOIN Artist JOIN Genre
+  ON Track.album_id = Album.album_id AND Track.genre_id = Genre.genre_id AND Album.artist_id = Artist.artist_id
+  WHERE Artist.name = "Taylor Swift"
